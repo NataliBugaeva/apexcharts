@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import MyChart from "./Components/Charts/Charts";
+import React from "react";
+import Bar from "./Components/Charts/Bar";
+import DonatChart from "./Components/Charts/Donut";
+import RadialBar from "./Components/Charts/RadialBar";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const newData = [[1, 20], [3, 35], [6, 38], [9, 47], [13, 27], [15, 30], [18, 50], [20, 37]]
+
+    return (
+        <div className="App">
+            {/*<MyChart newData={newData}/>*/}
+            <div className='CommonStyle'>
+                {/*<Bar />*/}
+                <DonatChart/>
+                {/*<RadialBar/>*/}
+            </div>
+
+        </div>
+    );
 }
 
 export default App;

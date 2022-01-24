@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+.CommonStyle {
+  border: 1px solid red;
+  width: 600px;
+}
 
 .App-logo {
   height: 40vmin;
